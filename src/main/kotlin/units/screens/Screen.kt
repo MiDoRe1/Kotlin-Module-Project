@@ -44,8 +44,9 @@ abstract class Screen(
             if (GlobalScanner.scanner.hasNextInt()) {
                 action = GlobalScanner.scanner.nextInt()
                 GlobalScanner.scanner.nextLine()
+            } else {
+                GlobalScanner.scanner.nextLine()
             }
-
         } while ( action !in 0..actions.size-1 )
         return action
     }
